@@ -6,6 +6,7 @@ ruby '2.7.2'
 gem 'devise'
 gem 'carrierwave', '~>2.0'
 gem "mini_magick"
+gem 'pg', group: :production 
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
