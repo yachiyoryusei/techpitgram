@@ -9,6 +9,7 @@ class User < ApplicationRecord
         :recoverable, :rememberable, :validatable
 
   validates :name,presence: true, length: {maximum: 50}
+  validates :user_name, uniqueness: true
 
   def update_without_current_password(params, *options)
     if params[:password].blank? && params[:password_confirmation].blank?
